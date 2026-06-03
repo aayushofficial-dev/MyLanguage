@@ -1,0 +1,12 @@
+Sources used:
+- /Users/aayushshah/Documents/myLanguage/bin/aayush.js
+- /Users/aayushshah/Documents/myLanguage/README.md
+- /Users/aayushshah/Documents/myLanguage/examples/python_features.aayush
+
+Content reflects the updated local interpreter as of this task:
+- variables, printing, if / elif / else, while, for loops, functions, returns
+- lists, indexing, index assignment, modulo, power
+- input, conversion, range, length, append, pop, type helpers
+- added learner supports: read-code-aloud mental model, keyword cheat sheet, marks tracker mini project, and practice roadmap
+
+No external facts, logos, screenshots, or third-party assets are used.

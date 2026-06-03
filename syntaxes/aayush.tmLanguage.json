@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Aayush",
+  "scopeName": "source.aayush",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#keywords" },
+    { "include": "#operators" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign.aayush",
+          "match": "#.*$"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.aayush",
+          "begin": "\"",
+          "end": "\""
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.aayush",
+          "match": "\\b\\d+\\b"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.aayush",
+          "match": "\\b(yedi|bhane|chabhane|natra_yedi|natra|sakiyo|jaba_samma|pratek|bhitra|gara|rok|arko|if|elif|else_if|then|else|end|while|for|in|do|break|continue)\\b"
+        },
+        {
+          "name": "keyword.declaration.aayush",
+          "match": "\\b(maan|maan_ki|maana_ki|rakha|kaam|firta|let|def|return)\\b"
+        },
+        {
+          "name": "support.function.aayush",
+          "match": "\\b(lekha|lekh|bol|print|sodha|input|ank|number|purna|int|dashamlab|float|sabda|str|satya|bool|lambai|len|sima|range|thap|append|nikal|pop|prakaar|type|sum|jamma|min|sano|max|thulo|abs|nirapekshya|round|gol|sorted|milau|reverse|ulta|keys|sachabi|values|manharu|has|cha)\\b"
+        },
+        {
+          "name": "constant.language.boolean.aayush",
+          "match": "\\b(sahi|galat|true|false|None|none|null|kehi_chaina)\\b"
+        },
+        {
+          "name": "keyword.operator.logical.aayush",
+          "match": "\\b(ra|wa|haina|and|or|not)\\b"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.aayush",
+          "match": "\\b(chai|barabar)\\b|==|!=|<=|>=|\\*\\*|[+\\-*/%=<>:]"
+        }
+      ]
+    }
+  }
+}

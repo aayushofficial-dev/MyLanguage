@@ -1,0 +1,10 @@
+*.py
+*.vsix
+extension.ts
+pakage.json
+test.nova
+program.lang
+tsconfig.json
+.DS_Store
+node_modules/**
+npm-debug.log

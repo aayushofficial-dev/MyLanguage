@@ -1,0 +1,50 @@
+{
+  "name": "aayush-language",
+  "displayName": "Aayush Language",
+  "description": "Nepali chat-style programming language support for .aayush files.",
+  "version": "0.0.1",
+  "publisher": "aayushshah",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onCommand:aayush.runFile"
+  ],
+  "main": "./extension.js",
+  "bin": {
+    "aayush": "./bin/aayush.js"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "aayush",
+        "aliases": ["Aayush", "aayush"],
+        "extensions": [".aayush"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "aayush",
+        "scopeName": "source.aayush",
+        "path": "./syntaxes/aayush.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "aayush.runFile",
+        "title": "Aayush: Run File"
+      }
+    ]
+  },
+  "scripts": {
+    "run": "node bin/aayush.js run",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.15.0"
+  }
+}

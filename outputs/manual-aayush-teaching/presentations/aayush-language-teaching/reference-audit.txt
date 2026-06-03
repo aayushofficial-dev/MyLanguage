@@ -1,0 +1,7 @@
+No source or reference presentation was provided.
+
+Design direction selected:
+- dark editor-inspired teaching deck
+- large code panels paired with concise explanations
+- distinct lesson sections: overview, syntax, control flow, data, functions, project work
+- high-contrast colors for classroom projection

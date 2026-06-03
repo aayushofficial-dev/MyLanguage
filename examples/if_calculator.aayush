@@ -1,0 +1,34 @@
+lekh "Aayush If Calculator"
+
+maana_ki first = ank(sodha("Enter first number: "))
+maana_ki second = ank(sodha("Enter second number: "))
+
+lekh "Choose operation:"
+lekh "1 = Add"
+lekh "2 = Subtract"
+lekh "3 = Multiply"
+lekh "4 = Divide"
+
+maana_ki choice = sodha("Enter your choice: ")
+
+yedi choice == "1" chabhane
+    lekh "Answer: " + (first + second)
+natra
+    yedi choice == "2" chabhane
+        lekh "Answer: " + (first - second)
+    natra
+        yedi choice == "3" chabhane
+            lekh "Answer: " + (first * second)
+        natra
+            yedi choice == "4" chabhane
+                yedi second == 0 chabhane
+                    lekh "Cannot divide by zero"
+                natra
+                    lekh "Answer: " + (first / second)
+                sakiyo
+            natra
+                lekh "Invalid choice"
+            sakiyo
+        sakiyo
+    sakiyo
+sakiyo

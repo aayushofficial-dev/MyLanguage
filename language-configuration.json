@@ -1,0 +1,47 @@
+{
+  "comments": {
+    "lineComment": "#"
+  },
+  "brackets": [
+    ["(", ")"],
+    ["[", "]"],
+    ["{", "}"]
+  ],
+  "autoClosingPairs": [
+    { "open": "\"", "close": "\"" },
+    { "open": "(", "close": ")" },
+    { "open": "[", "close": "]" },
+    { "open": "{", "close": "}" }
+  ],
+  "surroundingPairs": [
+    { "open": "\"", "close": "\"" },
+    { "open": "(", "close": ")" },
+    { "open": "[", "close": "]" },
+    { "open": "{", "close": "}" }
+  ],
+  "folding": {
+    "markers": {
+      "start": "^\\s*(yedi\\b.*\\b(?:bhane|chabhane)|natra_yedi\\b.*\\b(?:bhane|chabhane)|natra\\b|jaba_samma\\b.*\\bgara|pratek\\b.*\\bbhitra\\b.*\\bgara|kaam\\b.*\\))",
+      "end": "^\\s*sakiyo\\b"
+    }
+  },
+  "indentationRules": {
+    "increaseIndentPattern": "^\\s*(yedi\\b.*\\b(?:bhane|chabhane)|natra_yedi\\b.*\\b(?:bhane|chabhane)|natra\\b|jaba_samma\\b.*\\bgara|pratek\\b.*\\bbhitra\\b.*\\bgara|kaam\\b.*\\)|if\\b.*\\bthen|elif\\b.*\\bthen|else\\b|while\\b.*\\bdo|for\\b.*\\bin\\b.*\\bdo|def\\b.*\\))\\s*(#.*)?$",
+    "decreaseIndentPattern": "^\\s*(natra_yedi|natra|sakiyo|elif|else|end)\\b.*$"
+  },
+  "onEnterRules": [
+    {
+      "beforeText": "^\\s*(?:yedi\\b.*\\b(?:bhane|chabhane)|jaba_samma\\b.*\\bgara|kaam\\b.*\\)|if\\b.*\\bthen|while\\b.*\\bdo|def\\b.*\\))\\s*(#.*)?$",
+      "action": { "indentAction": 1 }
+    },
+    {
+      "beforeText": "^\\s*(?:natra|else)\\b.*$",
+      "action": { "indentAction": 1 }
+    },
+    {
+      "beforeText": "^\\s*(?:yedi\\b.*\\b(?:bhane|chabhane)|jaba_samma\\b.*\\bgara|kaam\\b.*\\)|if\\b.*\\bthen|while\\b.*\\bdo|def\\b.*\\))\\s*(#.*)?$",
+      "afterText": "^\\s*(?:natra|sakiyo|else|end)\\b.*$",
+      "action": { "indentAction": 2 }
+    }
+  ]
+}

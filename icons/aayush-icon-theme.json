@@ -1,0 +1,13 @@
+{
+  "iconDefinitions": {
+    "_aayush": {
+      "iconPath": "./aayush.svg"
+    }
+  },
+  "fileExtensions": {
+    "aayush": "_aayush"
+  },
+  "languageIds": {
+    "aayush": "_aayush"
+  }
+}

@@ -1,0 +1,9 @@
+task mode: create
+primary deck-profile: engineering-platform
+secondary gates: teaching clarity, beginner-friendly pacing, editable code examples
+required proof objects: language map, execution pipeline, keyword tables, syntax examples, exercises
+source requirements: local interpreter and README only; no external factual claims
+asset requirements: no external logos or identity assets
+brand authenticity constraints: use the existing Aayush language name and repository vocabulary only
+profile-specific QA gates: every slide has a teaching claim; code examples are readable; deck exports to editable PPTX
+known missing inputs: no preferred visual template provided

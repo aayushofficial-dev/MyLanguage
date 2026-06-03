@@ -1,0 +1,40 @@
+# making calculator using my own language .aayush
+
+lekh "Aayush ko calculator ma tapai lai swagat cha!"
+ 
+maan_ki pahilo chai ank(sodha("Suru ko number halnu hos:"))
+maan_ki dosro chai ank(sodha("Dosro number halnu hos:"))
+
+lekh "K garna chahanu huncha?"
+lekh "1. Jod"
+lekh "2. Ghatau"
+lekh "3. Ghuna"
+lekh "4. Bhaga"
+
+maan_ki choice chai ank(sodha("Tapai ko choice halnu hos (1-4):"))
+
+yedi choice barabar 1 chabhane
+    lekh "Jod: " + (pahilo + dosro)
+natra
+    yedi choice barabar 2 chabhane
+        lekh "Ghatau: " + (pahilo - dosro)
+    natra
+        yedi choice barabar 3 chabhane
+            lekh "Ghuna: " + (pahilo * dosro)
+        natra
+            yedi choice barabar 4 chabhane
+                yedi dosro barabar 0 chabhane
+                    lekh "zero bata bhaga garna mildaina"
+                natra
+                    lekh "Bhaga: " + (pahilo / dosro)
+                sakiyo
+            natra
+                lekh "Galat!!"
+            sakiyo
+        sakiyo
+    sakiyo
+sakiyo
+
+
+
+

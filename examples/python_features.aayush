@@ -1,0 +1,43 @@
+# Python-style features in Aayush
+
+maan scores chai [10, 20, 30]
+thap(scores, 40)
+
+lekh "Scores: " + scores
+lekh "Length: " + lambai(scores)
+lekh "First score: " + scores[0]
+lekh "Last score: " + scores[-1]
+lekh "Middle scores: " + scores[1:3]
+
+scores[1] chai scores[1] + 5
+lekh "Updated second score: " + scores[1]
+
+maan total chai 0
+pratek score bhitra scores gara
+    total chai total + score
+sakiyo
+
+lekh "Total: " + total
+
+pratek i bhitra sima(1, 6) gara
+    yedi i % 2 barabar 0 chabhane
+        arko
+    sakiyo
+    lekh "Odd number: " + i
+sakiyo
+
+yedi total > 100 chabhane
+    lekh "Great class"
+natra_yedi total > 50 chabhane
+    lekh "Good class"
+natra
+    lekh "Needs practice"
+sakiyo
+
+maan student chai {"name": "Aayush", "total": total, "active": sahi}
+lekh "Student: " + student["name"]
+student["average"] chai round(total / lambai(scores), 2)
+lekh "Average: " + student["average"]
+lekh "Keys: " + keys(student)
+lekh "Best score: " + max(scores)
+lekh "Sorted: " + sorted(scores)

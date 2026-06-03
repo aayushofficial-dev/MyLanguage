@@ -1,0 +1,6 @@
+maana_ki count = 1
+
+jaba_samma count <= 5 gara
+    lekh "Round " + count
+    maana_ki count = count + 1
+sakiyo
