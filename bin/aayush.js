@@ -360,8 +360,9 @@ class Parser {
 
   parseComparison() {
     let left = this.parseTerm();
-    while (this.peek()[0] === 'CMP') {
-      const op = this.consume('CMP')[1];
+    while (this.peek()[0] === 'CMP' || this.peek()[0] === 'IN') {
+      const op = this.peek()[0] === 'IN' ? 'in' : this.consume('CMP')[1];
+      if (this.peek()[0] === 'IN') this.consume('IN');
       left = ['CMP', op, left, this.parseTerm()];
     }
     return left;

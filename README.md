@@ -38,6 +38,7 @@ sakiyo
 | `return` | `firta` |
 | `true` | `sahi` |
 | `false` | `galat` |
+| `None` | `kehi_chaina` |
 | `and` | `ra` |
 | `or` | `wa` |
 | `not` | `haina` |
@@ -48,6 +49,7 @@ sakiyo
 | --- | --- |
 | `=` | `chai` |
 | `==` | `barabar` |
+| `in` | `bhitra` |
 | `%` | modulo / remainder |
 | `**` | power |
 
@@ -58,7 +60,12 @@ maan scores chai [10, 20, 30]
 thap(scores, 40)
 
 lekh "First score: " + scores[0]
+lekh "Last score: " + scores[-1]
+lekh "Middle scores: " + scores[1:3]
 scores[1] chai scores[1] + 5
+
+maan student chai {"name": "Aayush", "total": 0}
+student["active"] chai sahi
 
 maan total chai 0
 pratek score bhitra scores gara
@@ -84,28 +91,44 @@ Built-in helpers:
 | `dashamlab(value)` / `float(value)` | converts to a decimal number |
 | `sabda(value)` / `str(value)` | converts to text |
 | `satya(value)` / `bool(value)` | converts to true/false |
-| `lambai(value)` / `len(value)` | gets string or list length |
+| `lambai(value)` / `len(value)` | gets string, list, or dictionary length |
 | `sima(...)` / `range(...)` | creates a counting list for loops |
 | `thap(list, value)` / `append(...)` | appends to a list |
 | `nikal(list)` / `pop(...)` | removes and returns a list item |
 | `prakaar(value)` / `type(value)` | returns the value type |
+| `sum(list)` / `jamma(list)` | adds a list of numbers |
+| `min(list)` / `sano(list)` | gets the smallest value |
+| `max(list)` / `thulo(list)` | gets the largest value |
+| `abs(value)` / `nirapekshya(value)` | gets absolute value |
+| `round(value, places)` / `gol(...)` | rounds a number |
+| `sorted(list)` / `milau(list)` | returns a sorted copy |
+| `reverse(value)` / `ulta(value)` | reverses a list or string |
+| `keys(dict)` / `sachabi(dict)` | returns dictionary keys |
+| `values(dict)` / `manharu(dict)` | returns dictionary values |
+| `has(dict, key)` / `cha(dict, key)` | checks if a dictionary has a key |
 
 ## Run Aayush Code From Terminal
 
 ```bash
-node bin/aayush.js run examples/hello.aayush
+node bin/aayush.js run examples/final_check.aayush
 ```
 
 Run the input calculator:
 
 ```bash
-node bin/aayush.js run examples/input_calculator.aayush
+node bin/aayush.js run examples/calculator.aayush
 ```
 
 Try the Python-style feature sample:
 
 ```bash
 node bin/aayush.js run examples/python_features.aayush
+```
+
+Run the final validation check:
+
+```bash
+npm run check
 ```
 
 ## VS Code Extension

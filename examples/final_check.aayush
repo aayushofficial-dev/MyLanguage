@@ -1,0 +1,39 @@
+# Final language check for .aayush
+
+maan scores chai [10, 20, 30, 40]
+lekh "scores = " + scores
+lekh "last = " + scores[-1]
+lekh "middle = " + scores[1:3]
+lekh "sum = " + sum(scores)
+lekh "min = " + min(scores)
+lekh "max = " + max(scores)
+lekh "sorted = " + sorted([3, 1, 2])
+lekh "reverse text = " + reverse("abc")
+
+maan student chai {"name": "Aayush", "age": 18}
+student["active"] chai sahi
+
+yedi "name" bhitra keys(student) chabhane
+    lekh "name exists"
+sakiyo
+
+yedi has(student, "active") chabhane
+    lekh "active exists"
+sakiyo
+
+maan empty chai kehi_chaina
+yedi empty == None chabhane
+    lekh "none works"
+sakiyo
+
+yedi [1, 2] == [1, 2] chabhane
+    lekh "list equality works"
+sakiyo
+
+lekh "escaped quote: \"Namaste\""
+
+kaam average(items)
+    firta round(sum(items) / lambai(items), 2)
+sakiyo
+
+lekh "average = " + average(scores)
