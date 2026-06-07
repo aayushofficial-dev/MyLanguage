@@ -1,0 +1,19 @@
+# 1. Write a .aayush program to prompt the user for input number and print square of that particular integer.
+
+maan_ki number chai ank(sodha("Kunai euta number halnu hos:")) 
+lekh "Tapai le halnu bhako number ko square chai: " + (number * number) + "ho."
+
+# 2. Write a .aayush program to ask in kilograms and convert into grams.
+
+maan_ki kg chai ank(sodha("Number kilogram ma halnu hos:"))
+lekh "Tapai le halnu bhako kilogram ko gram ma rupantaran chai:" + (kg * 1000) + "gram ho."
+
+# Write a .aayush program to find the number is even or odd.
+
+maan_ki number chai ank(sodha("Kunai euta number halnu hos:"))
+
+yedi number % 2 barabar 0 chabhane
+    lekh (number ) + "is even."
+natra
+    lekh (number) + "is odd."
+sakiyo 
