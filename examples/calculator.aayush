@@ -15,7 +15,6 @@ maan_ki choice chai ank(sodha("Tapai ko choice halnu hos (1-4):"))
 
 yedi choice barabar 1 chabhane
     lekh "Jod: " + (pahilo + dosro)
-natra
     yedi choice barabar 2 chabhane
         lekh "Ghatau: " + (pahilo - dosro)
     natra
