@@ -20,7 +20,7 @@ yedi choice barabar 1 chabhane
     natra
         yedi choice barabar 3 chabhane
             lekh "Ghuna: " + (pahilo * dosro)
-        natra
+         natra
             yedi choice barabar 4 chabhane
                 yedi dosro barabar 0 chabhane
                     lekh "zero bata bhaga garna mildaina"
